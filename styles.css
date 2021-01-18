@@ -80,7 +80,7 @@ select {
   background: #ccc;
   border: none;
   font-size: 1.1rem;
-  transition: all 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 input:focus {
@@ -133,7 +133,13 @@ textarea {
   padding: 1rem;
   font-family: 'Noto Sans', sans-serif;
   resize: none;
-  opacity: 0.9;
+  background: #ccc;
+  transition: ease-in-out 0.2s;
+}
+
+textarea:focus {
+  background: #fff;
+  border-bottom: #2196F3 3px solid;
 }
 
 .btn {
