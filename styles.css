@@ -66,22 +66,54 @@ form fieldset legend {
   border-bottom: 3px solid white;
 }
 
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4%;
+}
+
 .contact input,
 select {
-  margin-top: 1%;
-  margin-bottom: 4%;
   width: 100%;
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 5px;
+  background: #ccc;
+  border: none;
+  font-size: 1.1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  background: #fff;
+  border-bottom: #2196F3 3px solid;
+  outline: 0;
+}
+
+select:focus {
+  outline: none;
+}
+
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+  padding-right: 1%;
+}
+
+.input-group #zip {
+  width: 50%;
 }
 
 .newsletter {
   margin-top: 2rem;
 }
 
+.input-group2 {
+  margin-bottom: 3%;
+}
+
 .newsletter p {
   font-size: 1.1rem;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .newsletter input {
@@ -133,6 +165,38 @@ textarea {
 
   .lines {
     max-width: 60%;
+  }
+
+  form fieldset legend {
+    margin-bottom: 3%;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input-group label {
+    flex: 1;
+    align-self: center;
+  }
+
+  .input-group input, select {
+    flex: 3;
+  }
+
+  .input-group #zip {
+    flex: 1;
+    margin-right: 48%;
+  }
+
+  .newsletter p {
+    margin-bottom: 1%;
+  }
+
+  .newsletter input {
+    margin-bottom: 1%;
   }
 
   .check-radio {

@@ -33,11 +33,11 @@
         </div>
         <div class="input-group">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone">
+          <input type="tel" id="phone" name="phone" placeholder="(111) 123-4567">
         </div>
         <div class="input-group">
           <label for="address">Street Address</label>
-          <input type="text" id="address" name="address">
+          <input type="text" id="address" name="address" placeholder="123 E Main St">
         </div>
         <div class="input-group">
           <label for="city">City</label>
@@ -46,7 +46,7 @@
         <div class="input-group">
           <label for="state">State</label>
           <select name="state" id="state">
-            <option selected="selected"></option>
+            <option selected="selected">Choose State</option>
             <option value="Alabama">AK</option>
             <option value="Alaska">AL</option>
             <option value="Arizona">AR</option>
@@ -91,7 +91,7 @@
             <option value="Tennessee">TN</option>
             <option value="Texas">TX</option>
             <option value="Utah">UT</option>
-            <option value=Vermont"">VT</option>
+            <option value="Vermont">VT</option>
             <option value="Virginia">VA</option>
             <option value="Washington">WA</option>
             <option value="West Virginia">WV</option>
@@ -106,20 +106,24 @@
       </fieldset>
       <fieldset class="newsletter">
         <legend>Newsletter</legend>
-        <p>Select the newsletters you would like to receive</p>
-        <input class="check-radio" type="checkbox" id="check1" name="check1" value="HTML News">
-        <label for="check1">HTML News</label><br>
-        <input class="check-radio" type="checkbox" id="check2" name="check2" value="CSS News">
-        <label for="check2">CSS News</label><br>
-        <input class="check-radio" type="checkbox" id="check3" name="check3" value="Javascript News">
-        <label for="check3">Javascript News</label><br>
-        <p>Newsletter format</p>
-        <input class="check-radio" type="radio" id="radio1 radio" name="radio1" value="HTML">
-        <label for="radio1">HTML</label><br>
-        <input class="check-radio" type="radio" id="radio2 radio" name="radio2" value="Plain text">
-        <label for="radio2">Plain text</label><br>
-        <label for="area">Other topics you'd like to hear about</label>
-        <textarea name="area" id="area" cols="30" rows="5"></textarea>
+        <div class="input-group2">
+          <p>Select the newsletters you would like to receive</p>
+          <input class="check-radio" type="checkbox" id="check1" name="check1" value="HTML News">
+          <label for="check1">HTML News</label><br>
+          <input class="check-radio" type="checkbox" id="check2" name="check2" value="CSS News">
+          <label for="check2">CSS News</label><br>
+          <input class="check-radio" type="checkbox" id="check3" name="check3" value="Javascript News">
+          <label for="check3">Javascript News</label><br>
+        </div>
+        <div class="input-group3">
+          <p>Newsletter format</p>
+          <input class="check-radio" type="radio" id="radio1" name="radio1" value="HTML">
+          <label for="radio1">HTML</label><br>
+          <input class="check-radio" type="radio" id="radio2" name="radio2" value="Plain text">
+          <label for="radio2">Plain text</label><br>
+          <label for="area">Other topics you'd like to hear about</label>
+          <textarea name="area" id="area" cols="30" rows="5"></textarea>
+        </div>
       </fieldset>
       <input class="btn" type="submit" value="Sign Up">
     </form>
